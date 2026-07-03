@@ -1,0 +1,583 @@
+/* ======================================================
+   Marilia & Lucian Wedding Seating
+   Version 2.0
+   Part 1 of 2
+====================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    margin:0;
+
+    font-family:'Cormorant Garamond',serif;
+
+    background:#f7f2eb;
+
+    color:#5b2233;
+
+}
+
+
+/* ==============================
+   PAGE
+============================== */
+
+.page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    padding:40px;
+
+    background:#f7f2eb;
+
+    background-image:url("./assets/floral-background.png");
+
+    background-repeat:no-repeat;
+
+    background-position:center center;
+
+    background-size:cover;
+
+}
+
+
+/* ==============================
+   INVITATION CARD
+============================== */
+
+.card{
+
+    position:relative;
+
+    z-index:5;
+
+    width:100%;
+
+    max-width:520px;
+
+    background:rgba(255,253,251,.96);
+
+    backdrop-filter:blur(3px);
+
+    border-radius:28px;
+
+    padding:58px 40px 46px;
+
+    box-shadow:
+
+        0 12px 30px rgba(0,0,0,.08),
+
+        0 0 80px rgba(255,248,235,.45);
+
+}
+
+/* ==============================
+   NAME
+============================== */
+
+h1{
+
+    text-align:center;
+
+    color:#7a2335;
+
+    font-family:'Parisienne',cursive;
+
+    font-weight:400;
+
+    line-height:1.02;
+
+    font-size:92px;
+
+}
+
+h1 span{
+
+    display:block;
+
+    font-size:34px;
+
+    color:#c39698;
+
+    margin:
+
+        10px
+
+        0;
+
+}
+
+/* ==============================
+   DATE
+============================== */
+
+.date{
+
+    text-align:center;
+
+    margin-top:18px;
+
+    letter-spacing:4px;
+
+    font-size:19px;
+
+    color:#a06d77;
+
+    font-weight:600;
+
+}
+
+/* ==============================
+   DIVIDER
+============================== */
+
+.line{
+
+    width:160px;
+
+    height:1px;
+
+    margin:
+
+        32px auto;
+
+    background:#e2c8cc;
+
+}
+
+.small-divider{
+
+    width:110px;
+
+    height:1px;
+
+    margin:
+
+        28px auto;
+
+    background:#ead8db;
+
+}
+
+/* ==============================
+   INTRO
+============================== */
+
+h2{
+
+    text-align:center;
+
+    font-size:54px;
+
+    color:#7a2335;
+
+    font-weight:600;
+
+    margin-bottom:22px;
+
+}
+
+.welcome-text{
+
+    text-align:center;
+
+    font-size:23px;
+
+    line-height:1.65;
+
+    color:#64404a;
+
+    margin-bottom:24px;
+
+}
+
+.instructions{
+
+    text-align:center;
+
+    font-size:22px;
+
+    line-height:1.7;
+
+    margin-bottom:36px;
+
+}
+
+/* ==============================
+   SEARCH
+============================== */
+
+input{
+
+    width:100%;
+
+    padding:
+
+        19px 22px;
+
+    font-size:24px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    border-radius:16px;
+
+    border:1px solid #e7cfd3;
+
+    background:white;
+
+    transition:.30s;
+
+}
+
+input::placeholder{
+
+    color:#9f878d;
+
+}
+
+input:focus{
+
+    outline:none;
+
+    border-color:#8c3145;
+
+    box-shadow:
+
+        0 0 0 5px rgba(122,35,53,.08);
+
+}
+
+button{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:
+        linear-gradient(
+        180deg,
+        #92253a 0%,
+        #7c2033 100%);
+
+    color:white;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:24px;
+
+    font-weight:600;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    box-shadow:
+
+        0 8px 20px rgba(122,35,53,.25);
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+
+        0 14px 28px rgba(122,35,53,.30);
+
+}
+
+
+button:active{
+
+    transform:translateY(0);
+
+}
+/* ======================================================
+   Part 2 of 2
+====================================================== */
+
+/* ==============================
+   RESULT
+============================== */
+
+#result{
+
+    margin-top:42px;
+
+}
+
+.result-card{
+
+    margin-top:10px;
+
+    background:#fffdfb;
+
+    border:1px solid #ead6d2;
+
+    border-radius:20px;
+
+    padding:34px 26px;
+
+    text-align:center;
+
+    box-shadow:
+
+        0 8px 24px rgba(0,0,0,.05);
+
+}
+
+.result-card h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:#7a2335;
+
+    font-size:48px;
+
+    font-weight:600;
+
+    margin-bottom:14px;
+
+}
+
+.result-card p{
+
+    font-size:28px;
+
+    line-height:1.6;
+
+    color:#6b4650;
+
+}
+
+.table-number{
+
+    margin-top:18px;
+
+    font-family:'Comfortaa',sans-serif;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#7a2335;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    line-height:1.2;
+
+}
+
+.not-found{
+
+    font-size:24px;
+
+    line-height:1.7;
+
+}
+
+/* ==============================
+   LITTLE DECORATIVE LINES
+============================== */
+
+.card::before{
+
+    content:"";
+
+    display:block;
+
+    width:150px;
+
+    height:1px;
+
+    background:#e7d2d6;
+
+    margin:0 auto 30px auto;
+
+}
+
+.card::after{
+
+    content:"";
+
+    display:block;
+
+    width:150px;
+
+    height:1px;
+
+    background:#e7d2d6;
+
+    margin:38px auto 0 auto;
+
+}
+
+/* ==============================
+   FADE ANIMATION
+============================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width:600px){
+
+   .page{
+
+    padding:24px;
+
+    background-size:cover;
+
+}
+
+    .card{
+
+        padding:42px 22px 34px;
+
+        border-radius:22px;
+
+    }
+
+    h1{
+
+        font-size:58px;
+
+    }
+
+    h1 span{
+
+        font-size:28px;
+
+        margin:6px 0;
+
+    }
+
+    h2{
+
+        font-size:44px;
+
+    }
+
+    .date{
+
+        font-size:17px;
+
+        letter-spacing:3px;
+
+    }
+
+    .welcome-text{
+
+        font-size:21px;
+
+    }
+
+    .instructions{
+
+        font-size:21px;
+
+    }
+
+    input{
+
+        font-size:22px;
+
+        padding:18px;
+
+    }
+
+    button{
+
+        font-size:21px;
+
+        padding:18px;
+
+    }
+
+    .result-card{
+
+        padding:26px 20px;
+
+    }
+
+    .result-card h2{
+
+        font-size:42px;
+
+    }
+
+    .result-card p{
+
+        font-size:24px;
+
+    }
+
+
+ 
+
+/* ==============================
+   LARGE DESKTOP
+============================== */
+
+@media (min-width:1200px){
+
+    .card{
+
+        max-width:540px;
+
+    }
+
+}
+

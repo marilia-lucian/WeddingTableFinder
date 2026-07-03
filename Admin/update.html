@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Wedding Guest List Updater</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="update.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Marilia & Lucian</h1>
+
+    <h2>Wedding Seating Chart Updater</h2>
+
+    <p class="intro">
+
+        Copy your spreadsheet rows directly from Excel or Google Sheets
+        and paste them below.
+
+    </p>
+
+    <div class="instructions">
+
+        <strong>Expected columns:</strong>
+
+        <br><br>
+
+        First Name | Last Name | Table
+
+    </div>
+
+    <textarea
+
+        id="spreadsheetData"
+
+        placeholder="Paste your spreadsheet here...">
+
+    </textarea>
+
+    <button id="generateButton">
+
+        Generate guests.json
+
+    </button>
+
+    <div id="summary"></div>
+
+    <button
+
+        id="downloadButton"
+
+        style="display:none;">
+
+        Download guests.json
+
+    </button>
+
+</div>
+
+<script src="update.js"></script>
+
+</body>
+
+</html>

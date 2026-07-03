@@ -1,0 +1,253 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:'Cormorant Garamond',serif;
+
+    background:#f7f2eb;
+
+    color:#5b2233;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.container{
+
+    width:100%;
+
+    max-width:760px;
+
+    background:#fffdfb;
+
+    border-radius:28px;
+
+    padding:50px;
+
+    box-shadow:
+
+        0 10px 28px rgba(0,0,0,.08);
+
+}
+
+h1{
+
+    text-align:center;
+
+    font-family:'Parisienne',cursive;
+
+    color:#7a2335;
+
+    font-size:72px;
+
+    font-weight:400;
+
+}
+
+h2{
+
+    text-align:center;
+
+    margin-top:8px;
+
+    color:#7a2335;
+
+    font-size:34px;
+
+    font-weight:600;
+
+}
+
+.intro{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    font-size:24px;
+
+    line-height:1.6;
+
+}
+
+.instructions{
+
+    margin-top:28px;
+
+    padding:20px;
+
+    border-radius:14px;
+
+    background:#faf4f1;
+
+    border:1px solid #ead6d2;
+
+    font-size:22px;
+
+    text-align:center;
+
+}
+
+textarea{
+
+    margin-top:28px;
+
+    width:100%;
+
+    height:320px;
+
+    resize:vertical;
+
+    padding:20px;
+
+    border-radius:16px;
+
+    border:1px solid #d8c1c5;
+
+    font-size:18px;
+
+    font-family:Consolas, monospace;
+
+    line-height:1.5;
+
+}
+
+textarea:focus{
+
+    outline:none;
+
+    border-color:#92253a;
+
+    box-shadow:
+
+        0 0 0 5px rgba(146,37,58,.10);
+
+}
+
+button{
+
+    width:100%;
+
+    margin-top:28px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #92253a,
+            #7c2033
+        );
+
+    color:white;
+
+    font-size:22px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+
+        0 10px 24px rgba(122,35,53,.22);
+
+}
+
+#summary{
+
+    margin-top:30px;
+
+    padding:20px;
+
+    border-radius:14px;
+
+    background:#faf4f1;
+
+    border:1px solid #ead6d2;
+
+    display:none;
+
+    white-space:pre-line;
+
+    font-size:21px;
+
+}
+
+@media (max-width:700px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    .container{
+
+        padding:30px 22px;
+
+    }
+
+    h1{
+
+        font-size:54px;
+
+    }
+
+    h2{
+
+        font-size:28px;
+
+    }
+
+    .intro{
+
+        font-size:21px;
+
+    }
+
+    .instructions{
+
+        font-size:20px;
+
+    }
+
+    textarea{
+
+        height:260px;
+
+    }
+
+}
