@@ -22,9 +22,13 @@ body{
 
     font-family:'Cormorant Garamond',serif;
 
-    background:#f7f2eb;
-
     color:#5b2233;
+
+    background:#f7f2eb url("./Assets/floral-background.png") no-repeat center top;
+
+    background-size:cover;
+
+    background-attachment:fixed;
 
 }
 
@@ -46,16 +50,6 @@ body{
     position:relative;
 
     padding:40px;
-
-    background:#f7f2eb;
-
-    background-image:url("./Assets/floral-background.png");
-
-    background-repeat:no-repeat;
-
-    background-position:center center;
-
-    background-size:cover;
 
 }
 
@@ -177,7 +171,91 @@ h1 span{
     background:#ead8db;
 
 }
+/* ==============================
+   LANGUAGE BUTTONS
+============================== */
 
+.language-buttons{
+
+    display:flex;
+
+    gap:14px;
+
+    justify-content:center;
+
+    margin-bottom:32px;
+
+}
+
+.language-button{
+
+    flex:1;
+
+    max-width:180px;
+
+    text-align:center;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #92253a,
+            #7c2033
+        );
+
+    color:white;
+
+    text-decoration:none;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:24px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    transition:.25s;
+
+    box-shadow:
+
+        0 8px 20px rgba(122,35,53,.20);
+
+}
+
+.language-button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.language-button.active{
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #92253a,
+            #7c2033
+        );
+
+}
+
+.language-button:not(.active){
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #b88790,
+            #a5727b
+        );
+
+}
 /* ==============================
    INTRO
 ============================== */
@@ -214,11 +292,17 @@ h2{
 
     text-align:center;
 
-    font-size:22px;
+    font-size:34px;
 
-    line-height:1.7;
+    font-weight:600;
 
-    margin-bottom:36px;
+    line-height:1.35;
+
+    color:#6b4650;
+
+    margin-top:24px;
+
+    margin-bottom:34px;
 
 }
 
@@ -476,9 +560,9 @@ button:active{
 
    .page{
 
-    padding:24px;
+    min-height:100vh;
 
-    background-size:cover;
+    padding:24px;
 
 }
 
@@ -526,7 +610,11 @@ button:active{
 
     .instructions{
 
-        font-size:21px;
+    font-size:30px;
+
+    line-height:1.35;
+
+    font-weight:600;
 
     }
 
@@ -564,7 +652,19 @@ button:active{
 
     }
 
+.language-buttons{
 
+    gap:10px;
+
+}
+
+.language-button{
+
+    font-size:20px;
+
+    padding:14px;
+
+}
  
 
 /* ==============================
@@ -580,4 +680,7 @@ button:active{
     }
 
 }
+
+}
+
 

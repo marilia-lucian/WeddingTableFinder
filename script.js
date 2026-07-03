@@ -1,11 +1,23 @@
 // =========================================
 // Marilia & Lucian Wedding Seating
-// Version 2.0
+// Version 3.0 - Bilingual
 // =========================================
 
 let guests = [];
 
-// Load guest list
+// =========================================
+// Language Detection
+// =========================================
+
+const isPortuguese =
+    window.location.pathname
+    .toLowerCase()
+    .includes("index-pt");
+
+// =========================================
+// Load Guest List
+// =========================================
+
 fetch("guests.json")
 .then(response => response.json())
 .then(data => {
@@ -16,10 +28,9 @@ fetch("guests.json")
 .catch(error => console.error(error));
 
 
-
-// --------------------------------------
-// Remove accents
-// --------------------------------------
+// =========================================
+// Remove Accents
+// =========================================
 
 function normalize(text){
 
@@ -36,20 +47,17 @@ function normalize(text){
 }
 
 
-
-// --------------------------------------
-// Search button
-// --------------------------------------
+// =========================================
+// Search Button
+// =========================================
 
 document
 .getElementById("searchButton")
-.addEventListener("click",searchGuest);
-
-
+.addEventListener("click", searchGuest);
 
 document
 .getElementById("guestName")
-.addEventListener("keypress",function(e){
+.addEventListener("keypress", function(e){
 
     if(e.key==="Enter"){
 
@@ -60,10 +68,9 @@ document
 });
 
 
-
-// --------------------------------------
+// =========================================
 // Main Search
-// --------------------------------------
+// =========================================
 
 function searchGuest(){
 
@@ -76,16 +83,25 @@ function searchGuest(){
     const result = document.getElementById("result");
 
 
+
+    // ------------------------------
+    // Empty Search
+    // ------------------------------
+
     if(search===""){
 
-        result.innerHTML=
+        result.innerHTML =
 
         `
         <div class="result-card">
 
             <p class="not-found">
 
-                Please enter your name.
+                ${
+                    isPortuguese
+                    ? "Por favor, digite seu nome."
+                    : "Please enter your name."
+                }
 
             </p>
 
@@ -98,15 +114,17 @@ function searchGuest(){
 
 
 
-    const matches=guests.filter(g=>{
+    // ------------------------------
+    // Find Matches
+    // ------------------------------
 
-        const first=normalize(g.firstName);
+    const matches = guests.filter(g=>{
 
-        const last=normalize(g.lastName);
+        const first = normalize(g.firstName);
 
-        const full=normalize(g.firstName+" "+g.lastName);
+        const last = normalize(g.lastName);
 
-
+        const full = normalize(g.firstName+" "+g.lastName);
 
         return(
 
@@ -122,40 +140,50 @@ function searchGuest(){
 
         );
 
-
-
     });
 
 
 
-
-    // One match
+    // ------------------------------
+    // One Match
+    // ------------------------------
 
     if(matches.length===1){
 
-        const guest=matches[0];
+        const guest = matches[0];
 
-        result.innerHTML=
+        result.innerHTML =
 
         `
         <div class="result-card">
 
             <h2>
 
-                Welcome,
-                ${guest.firstName}!
+                ${
+                    isPortuguese
+                    ? `Olá, ${guest.firstName}!`
+                    : `Welcome, ${guest.firstName}!`
+                }
 
             </h2>
 
             <p>
 
-                You are seated at
+                ${
+                    isPortuguese
+                    ? "Sua mesa é a"
+                    : "You are seated at"
+                }
 
             </p>
 
             <div class="table-number">
 
-                Table ${guest.table}
+                ${
+                    isPortuguese
+                    ? `Mesa ${guest.table}`
+                    : `Table ${guest.table}`
+                }
 
             </div>
 
@@ -168,24 +196,27 @@ function searchGuest(){
 
 
 
-    // Multiple matches
+    // ------------------------------
+    // Multiple Matches
+    // ------------------------------
 
     if(matches.length>1){
 
-        result.innerHTML=
+        result.innerHTML =
 
         `
         <div class="result-card">
 
             <p class="not-found">
 
-                We found several guests matching
+                ${
+                    isPortuguese
 
-                "<strong>${search}</strong>"
+                    ? `Encontramos vários convidados com "<strong>${search}</strong>".<br><br>Digite seu nome completo por gentileza.`
 
-                <br><br>
+                    : `We found several guests matching "<strong>${search}</strong>".<br><br>Please type your complete first and last name.`
 
-                Please type your complete first and last name.
+                }
 
             </p>
 
@@ -198,20 +229,25 @@ function searchGuest(){
 
 
 
-    // Nothing found
+    // ------------------------------
+    // Guest Not Found
+    // ------------------------------
 
-    result.innerHTML=
+    result.innerHTML =
 
     `
     <div class="result-card">
 
         <p class="not-found">
 
-            Sorry, we couldn't find that name.
+            ${
+                isPortuguese
 
-            <br><br>
+                ? `Não encontramos esse nome.<br><br>Verifique a grafia e tente novamente, ou solicite ajuda aos anfitriões.`
 
-            Please check the spelling or ask a member of the wedding party.
+                : `Sorry, we couldn't find that name.<br><br>Please check the spelling or ask a member of the wedding party.`
+
+            }
 
         </p>
 
