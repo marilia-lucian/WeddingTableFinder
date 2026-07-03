@@ -61,4 +61,4 @@ Keep:
 - Your GitHub repository.
 - Your master guest spreadsheet.
 
-Created for Marilia & Lucian.
+Created for Marilia & Lucian
