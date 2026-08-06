@@ -171,7 +171,7 @@ function searchGuest(){
 
                 ${
                     isPortuguese
-                    ? "Sua mesa é a"
+                    ? "Por favor, sente-se à"
                     : "You are seated at"
                 }
 
