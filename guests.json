@@ -50,23 +50,18 @@
     "table": 2
   },
   {
-    "firstName": "Stella",
-    "lastName": "Kielek",
-    "table": 2
-  },
-  {
     "firstName": "Christine",
     "lastName": "Bennett",
     "table": 2
   },
   {
-    "firstName": "Noreen",
-    "lastName": "Tope",
+    "firstName": "Josh",
+    "lastName": "Kielek",
     "table": 2
   },
   {
-    "firstName": "Jeff",
-    "lastName": "Tope",
+    "firstName": "Jeremy",
+    "lastName": "Kielek",
     "table": 2
   },
   {
@@ -100,23 +95,13 @@
     "table": 3
   },
   {
-    "firstName": "Suzanne",
-    "lastName": "Larocque",
-    "table": 3
-  },
-  {
-    "firstName": "Frank",
-    "lastName": "Larocque",
-    "table": 3
-  },
-  {
-    "firstName": "Renata",
-    "lastName": "Costa",
+    "firstName": "Javier",
+    "lastName": "Alfaro",
     "table": 4
   },
   {
-    "firstName": "Junior",
-    "lastName": "Costa",
+    "firstName": "Eliana",
+    "lastName": "Ventura",
     "table": 4
   },
   {
@@ -140,43 +125,53 @@
     "table": 4
   },
   {
-    "firstName": "Marilia",
-    "lastName": "Kielek",
+    "firstName": "Adunke",
+    "lastName": "Ajagunna",
+    "table": 4
+  },
+  {
+    "firstName": "Matthew",
+    "lastName": "Sternisha",
+    "table": 4
+  },
+  {
+    "firstName": "Claudia",
+    "lastName": "Lara Martinez",
     "table": 5
   },
   {
-    "firstName": "Lucian",
-    "lastName": "Kielek",
+    "firstName": "Jorge",
+    "lastName": "Martinez",
     "table": 5
   },
   {
-    "firstName": "Josh",
-    "lastName": "Kielek",
+    "firstName": "Greg",
+    "lastName": "Girty",
     "table": 5
   },
   {
-    "firstName": "Jeremy",
-    "lastName": "Kielek",
+    "firstName": "Michele",
+    "lastName": "Girty",
     "table": 5
   },
   {
-    "firstName": "Dan",
-    "lastName": "MacNeil",
+    "firstName": "Andrew",
+    "lastName": "Kotarscak",
     "table": 5
   },
   {
-    "firstName": "Melissa",
-    "lastName": "MacNeil",
+    "firstName": "Gabriel",
+    "lastName": "Kotarscak",
     "table": 5
   },
   {
-    "firstName": "Mark",
-    "lastName": "Ewing",
+    "firstName": "Jesse",
+    "lastName": "Jablonski",
     "table": 5
   },
   {
-    "firstName": "Melissa",
-    "lastName": "Ewing",
+    "firstName": "Jolanta",
+    "lastName": "Jablonski",
     "table": 5
   },
   {
@@ -205,98 +200,53 @@
     "table": 6
   },
   {
-    "firstName": "Brock",
-    "lastName": "Joubarne",
+    "firstName": "Mark",
+    "lastName": "Ewing",
     "table": 6
   },
   {
-    "firstName": "Jesse",
-    "lastName": "Jablonski",
+    "firstName": "Melissa",
+    "lastName": "MacNeil",
     "table": 6
-  },
-  {
-    "firstName": "Jolanta",
-    "lastName": "Jablonski",
-    "table": 6
-  },
-  {
-    "firstName": "Greg",
-    "lastName": "Girty",
-    "table": 7
-  },
-  {
-    "firstName": "Michele",
-    "lastName": "Girty",
-    "table": 7
-  },
-  {
-    "firstName": "Andrew",
-    "lastName": "Kotarscak",
-    "table": 7
-  },
-  {
-    "firstName": "Gabriel",
-    "lastName": "Kotarscak",
-    "table": 7
-  },
-  {
-    "firstName": "Dave",
-    "lastName": "Hanson",
-    "table": 7
-  },
-  {
-    "firstName": "Noreen",
-    "lastName": "Hanson",
-    "table": 7
-  },
-  {
-    "firstName": "Kevin",
-    "lastName": "Gibbs",
-    "table": 7
   },
   {
     "firstName": "Scott",
     "lastName": "Dillabough",
+    "table": 6
+  },
+  {
+    "firstName": "Noreen",
+    "lastName": "Tope",
     "table": 7
   },
   {
-    "firstName": "Javier",
-    "lastName": "Alfaro",
-    "table": 8
+    "firstName": "Jeff",
+    "lastName": "Tope",
+    "table": 7
   },
   {
-    "firstName": "Eliana",
-    "lastName": "Ventura",
-    "table": 8
-  },
-  {
-    "firstName": "Adunke",
-    "lastName": "Ajagunna",
-    "table": 8
-  },
-  {
-    "firstName": "Matthew",
-    "lastName": "Sternisha",
-    "table": 8
-  },
-  {
-    "firstName": "Claudia",
-    "lastName": "Lara Martinez",
-    "table": 8
-  },
-  {
-    "firstName": "Jorge",
-    "lastName": "Martinez",
-    "table": 8
+    "firstName": "Lucrezia",
+    "lastName": "Adamo",
+    "table": 7
   },
   {
     "firstName": "Sandra",
-    "lastName": "Yorke",
-    "table": 8
+    "lastName": "York",
+    "table": 7
   },
   {
     "firstName": "Michael",
-    "lastName": "Yorke",
-    "table": 8
+    "lastName": "York",
+    "table": 7
+  },
+  {
+    "firstName": "Wayne",
+    "lastName": "London",
+    "table": 7
+  },
+  {
+    "firstName": "Dao",
+    "lastName": "Tran",
+    "table": 7
   }
 ]
